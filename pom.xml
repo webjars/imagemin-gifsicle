@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>imagemin-gifsicle</artifactId>
-    <version>0.1.2-SNAPSHOT</version>
+    <version>0.1.1-1-SNAPSHOT</version>
     <name>imagemin-gifsicle</name>
     <description>WebJar for imagemin-gifsicle</description>
     <url>http://webjars.org</url>
@@ -46,6 +46,24 @@
         <extractDir>${project.build.directory}/imagemin-gifsicle-${upstreamVersion}</extractDir>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>exec-buffer</artifactId>
+            <version>0.1.1-1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>gifsicle</artifactId>
+            <version>0.1.6-1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>image-type</artifactId>
+            <version>0.1.4-1</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
